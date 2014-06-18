@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+
+    "name": "Minimum Font Size Shortcut",
+    "description": "Assign shortcut (defaults to Cmd+Shift+M) to set or reset to default the minimum font size.",
+    "version": "1.0",
+
+    "commands": {
+        "change-minimum-font-size": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+M"
+            },
+            "description": "Toggle Minimum Font Size"
+        }
+    },
+
+    "icons": {
+        "128": "128.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "permissions": [
+        "fontSettings"
+    ]
+
+}
